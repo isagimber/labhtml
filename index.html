@@ -1,11 +1,135 @@
 <!DOCTYPE html>
 <html lang="es-ES">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8">    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+               <!--Enlaces de bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--Enlace a mi css, siempre debajo del de bootstrap-->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <title>Paisajes de España</title>
 </head>
 <body>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur harum facilis neque iste quae, at cumque excepturi, accusamus et aut culpa nam, provident ut praesentium omnis quos? Placeat, dolorum cumque.</p>>
+    <!--Carrusel de Imágenes-->
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+        <!-- Indicadores abajo -->
+        <ul class="carousel-indicators">
+          <li data-target="#demo" data-slide-to="0" class="active"></li>
+          <li data-target="#demo" data-slide-to="1"></li>
+          <li data-target="#demo" data-slide-to="2"></li>
+          <li data-target="#demo" data-slide-to="3"></li>
+        </ul>
+      
+        <!-- Imágenes diapositivas -->
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/Lleida.jpg" alt="Montañas" class="w-100">
+            <div class="carousel-caption">
+              <a href="https://www.vacaciones-espana.es/Espana/articulos/paisajes-naturales-de-espana"> 
+                <h3>Parque Nacional de Aigüestortes y Lago de San Mauricio, Pirineos</h3>
+              </a>   
+                <p>En la provincia de Lleida, el Parque Nacional de Aigüestortes y el lago de Sant Maurici es un escenario de auténticos paraisos.</p>
+            
+            </div>
+          </div>       
+          <div class="carousel-item">
+            <img src="img/cueva.jpg" alt="Cueva" class="w-100">
+            <div class="carousel-caption">
+              <a href="https://www.vacaciones-espana.es/Espana/articulos/paisajes-naturales-de-espana">
+                <h3>Cuevas del Drach, Mallorca.</h3>
+              </a>
+                <p>Mallorca esconde un tesoro natural que se encuentra en el municipio de Manacol.                    
+                </p>             
+            </div>               
+          </div>
+          <div class="carousel-item">
+            <img src="img/atardecerjpg.jpg" alt="Atardecer" class="w-100">
+            <div class="carousel-caption">
+              <a href="https://www.vacaciones-espana.es/Espana/articulos/paisajes-naturales-de-espana">
+                <h3>Salinas de San Pedro del Pinatar, Murcia</h3>
+              </a>
+                <p>Este espacio natural protegido se encuentra en Murcia, al norte del Mar Menor.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/mar.jpg" alt="Playa" class="w-100">
+            <div class="carousel-caption">
+              <a href="https://www.vacaciones-espana.es/Espana/articulos/paisajes-naturales-de-espana"> 
+                <h3>Playa de las Catedrales, Lugo</h3>
+              </a>
+                <p>La playa de las catedrales se ha convertido en uno de los paisajes naturales más llamativos y visitados de España.
+                </p>              
+            </div>
+          </div>
+        </div>  
+        <!-- Botones de control laterales -->
+        <a class="carousel-control-prev" href="#demo" data-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </a>      
+      </div>
+
+ <!--Barra de Navegación fija debajo del carrusel -->
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-center sticky-top">
+    <!--Logotipo-->
+    <a class="navbar-brand" href="#">
+        <img src="img/bandera-espana-con-escudo.jpg" alt="logo-español" width="60px;">
+        Paisajes de España</a>
+                <!--Botón Colapsar-->
+     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+                    <!-- Enlaces -->
+  <div class="collapse navbar-collapse" id="collapsibleNavbar">>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link text-light" href="https://www.facebook.com" target="_blank">Facebook</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="https://www.instagram.com" target="_blank">Instagram</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-light" href="https://www.twitter.com" target="_blank"">Twitter</a>
+      </li>
+    </ul>
+</div>
+</nav>
+
+<!--Section Principal-->
+<div class="row">
+   <div class="col-sm-12 col-md-6 mt-4">
+    <h1 class="font-weight-bold text-center">Paisajes Naturales de España</h1>
+    <p class="text-justify">España está llena de hermosos paisajes naturales, y muchos aún desconocidos.
+     <br> Un país repleto de maravillas de la naturaleza, hermosos paisajes geológicos como si fueran sacados de otro planeta, bosques frondosos que contrastan con los desiertos más áridos, volcanes, lagos y altas montañas.
+     <br> Las posibilidades son tantas que puede resultar difícil decidir qué paisajes explorar durante tu próxima escapada rural. Por eso hemos reunido en esta lista los paisajes naturales de España más alucinantes y que tienes que visitar al menos una vez en tu vida.
+     <br> Sigue leyendo e inspírate con estos 22 paisajes que no te puedes perder.
+    </p>  
+   </div>
+   <div class="col-sm-12 col-md-6 mt-4">
+    <h1 class="font-weight-bold text-center">Paisajes Naturales de España</h1>
+    <p class="text-justify">España está llena de hermosos paisajes naturales, y muchos aún desconocidos.
+     <br> Un país repleto de maravillas de la naturaleza, hermosos paisajes geológicos como si fueran sacados de otro planeta, bosques frondosos que contrastan con los desiertos más áridos, volcanes, lagos y altas montañas.
+     <br> Las posibilidades son tantas que puede resultar difícil decidir qué paisajes explorar durante tu próxima escapada rural. Por eso hemos reunido en esta lista los paisajes naturales de España más alucinantes y que tienes que visitar al menos una vez en tu vida.
+     <br> Sigue leyendo e inspírate con estos 22 paisajes que no te puedes perder.
+    </p>  
+   </div>
+</div>
+
+                 <!--Footer-->
+<div class="jumbotron col-12 text-center mt-5">
+    <p>Esta página es propiedad intelectual de <a class="text-info" href="@">isagimber</a></p>
+      <address>Lorca (Murcia)</address>
+  </div>
+       
 </body>
 </html>
